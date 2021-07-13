@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+	   <meta charset="utf-8">
+	   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- Подключение css -->
+        <link href="js/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
+        <link href="js/libs/jquery-ui/jquery-ui.min.css" rel="stylesheet">    
+        <link href="css/desktop.css" rel="stylesheet">
+        <link href="css/mobile.css" rel="stylesheet">    
+        <!-- Подключение jquery -->
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <script src="js/libs/bootstrap/js/bootstrap.js"></script>
+        <script src="js/libs/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Подключение angular -->
+        <script src="js/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="js/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="js/libs/angularjs/1.6.9/angular-cookies.js"></script>
+        <!-- Подключение файла для подмены основной части контента -->
+        <script src="js/routes.js"></script>
+        <!-- Подключение файлов-контроллеров для основной части -->
+        <script src="js/controllers/header.js"></script>
+        <script src="js/controllers/index.js"></script>
+        <script src="js/controllers/projects.js"></script>
+        <script src="js/controllers/contacts.js"></script>
+        <script src="js/controllers/about-us.js"></script>
+        <script src="js/controllers/search.js"></script>
+        <script src="js/controllers/common.js"></script>
+    </head>
+
+    <body ng-app="main" ng-controller="common" ng-class="{'loaded':isLoaded}">
+
+        <div class="blocked" style="display:none;"></div>
+        <!-- Основная часть -->
+        <div class="wrap">
+            <!-- Шапка страницы -->
+            <header ng-include="'views/includes/header.html'"></header>
+            <!-- Основной блок страницы -->
+            <div class="main">
+                <div ng-view class="main-content"></div>
+            </div>
+            <!-- Подвал страницы -->
+            <div ng-include="'views/includes/footer.html'"></div>
+        </div>
+    </body>
+</html>

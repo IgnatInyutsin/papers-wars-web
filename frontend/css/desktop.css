@@ -1,0 +1,17 @@
+/*Обнуление*/
+*,*:before,*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+/*Общие стили*/
+body {
+  background-color: #2f3336;
+}
+.wrap {
+
+}
