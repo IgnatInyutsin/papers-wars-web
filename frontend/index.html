@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>   
+    <head>
 	   <meta charset="utf-8">
 	   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <!-- Подключение css -->
-        <link href="js/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
-        <link href="js/libs/jquery-ui/jquery-ui.min.css" rel="stylesheet">    
+        <link href="js/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="js/libs/jquery-ui/jquery-ui.min.css" rel="stylesheet">
         <link href="css/desktop.css" rel="stylesheet">
-        <link href="css/mobile.css" rel="stylesheet">    
+        <link href="css/mobile.css" rel="stylesheet">
         <!-- Подключение jquery -->
         <script src="js/libs/jquery/jquery.min.js"></script>
         <script src="js/libs/bootstrap/js/bootstrap.js"></script>
@@ -35,7 +35,7 @@
         <!-- Основная часть -->
         <div class="wrap">
             <!-- Шапка страницы -->
-            <header ng-include="'views/includes/header.html'"></header>
+            <header ng-include="'views/includes/header.html'" ng-controller="header"></header>
             <!-- Основной блок страницы -->
             <div class="main">
                 <div ng-view class="main-content"></div>

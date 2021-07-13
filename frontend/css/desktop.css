@@ -8,10 +8,71 @@
 html, body {
 	height: 100%;
 }
-/*Общие стили*/
-body {
-  background-color: #2f3336;
-}
+
+/*Стили для демонстрации*/
 .wrap {
 
+}
+
+/*Общие стили*/
+body {
+  background-color: #2a2d30;
+}
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2f3336;
+	z-index: 2;
+}
+.header__body {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+}
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+.header__list {
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+.header__list li {
+	list-style: none;
+	margin-left: 20px;
+}
+.header__link {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-decoration: none;
+}
+.header__logo {
+	flex: 0 0 60px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+}
+.header__logo img {
+	max-width: 100%;
+	display: block;
+}
+.header__burger {
+	display: none;
 }
