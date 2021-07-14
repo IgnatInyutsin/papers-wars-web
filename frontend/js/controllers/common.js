@@ -13,8 +13,4 @@ main.controller('common',function($scope,$http,$location,$cookies){
     }
     //если переходят по пустому хэшу то редирект на главную страницу
     if(document.location.hash=="")document.location.hash='!/index/';
-
-    $scope.burgerClass = function() {
-      console.log('ежепалка топ')
-    }
 });
