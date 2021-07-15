@@ -26,6 +26,7 @@ main.controller('header',function($scope,$http,$location,$cookies){
       $('.header__menu').removeClass("active");
       $('.header__menu').addClass("deactive");
       $('body').toggleClass('lock');
+      $('.header__burger').toggleClass('active');
     }
   }
 });

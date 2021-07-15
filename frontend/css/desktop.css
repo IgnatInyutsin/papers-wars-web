@@ -258,9 +258,82 @@ header:before {
 .left__news::-webkit-scrollbar { width: 0; }
 
 .right__news,
-left__news {
+.left__news {
 	ms-overflow-style: none;
 	overflow: -moz-scrollbars-none;
+}
+
+.homepage__all {
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: calc(100vh - 120px);
+	bottom: 0;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.left__hompage {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 65%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.right__hompage {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 33%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	
+}
+.hompage__block {
+	position: relative;
+	display: flex;
+	margin: 10px 10px 10px 10px;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.right__hompage::-webkit-scrollbar, 
+.left__hompage::-webkit-scrollbar { width: 0; }
+
+.right__hompage,
+.left__hompage {
+	ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+}
+.hompage__image {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.hompage__image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.hompage__name {
+	font-size: 24px;
+	color: #ffffff;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+}
+.hompage__text {
+	position: relative;
+	font-size: 18px;
+	color:  #ffffff;
+	margin: 10px 10px 10px 10px;
 }
 
 @media(max-width: 1200px) {
