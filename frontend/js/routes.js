@@ -12,4 +12,19 @@ main.config(function($routeProvider){
         controller: "contacts",
         templateUrl:"views/controllers/contacts.html"
     });
+
+    $routeProvider.when("/mods/",{
+        controller: "mods",
+        templateUrl:"views/controllers/mods.html"
+    });
+
+    $routeProvider.when("/best_projects/",{
+        controller: "best_projects",
+        templateUrl: "views/controllers/best_projects.html"
+    });
+
+    $routeProvider.when("/news/",{
+        controller: "news",
+        templateUrl: "views/controllers/news.html"
+    });
 });

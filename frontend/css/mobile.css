@@ -116,6 +116,17 @@
     flex-direction: row;
     height: 100px;
   }
+  .all__news {
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+  }
+  .left__news,
+  .right__news {
+    width: 100%;
+  }
 }
 
 @media(max-width: 600px) {

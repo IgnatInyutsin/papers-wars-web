@@ -19,6 +19,7 @@ html, body {
 body {
   background-color: #2a2d30;
 	font-family: Serif, 'FF Meta Serif';
+	overflow-x: hidden;
 }
 .main {
 	padding-top: 100px;
@@ -183,6 +184,83 @@ header:before {
 	overflow: hidden;
 	position: relative;
 	margin-left: 3%;
+}
+
+.all__news {
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: calc(100vh - 120px);
+	bottom: 0;
+	justify-content: space-between;
+}
+
+.left__news {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 47%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.right__news {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 47%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.news {
+	position: relative;
+	display: flex;
+	margin: 10px 10px 10px 10px;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+.news__image {
+	position: relative;
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+}
+.news__image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.almeria img {
+	top: -150px;
+}
+.dlc img{
+	top: -50px;
+}
+.news__name {
+	font-size: 24px;
+	color: #ffffff;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+}
+.news__text {
+	font-size: 18px;
+	color:  #ffffff;
+	margin: 10px 10px 10px 10px;
+}
+
+.right__news::-webkit-scrollbar, 
+.left__news::-webkit-scrollbar { width: 0; }
+
+.right__news,
+left__news {
+	ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
 }
 
 @media(max-width: 1200px) {
