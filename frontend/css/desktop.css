@@ -14,11 +14,11 @@ html, body {
 /*Общие стили*/
 @font-face {
   font-family: Serif; /* Гарнитура шрифта */
-  src: url(../img/MetaSerifPro-Light.ttf); /* Путь к файлу со шрифтом */
+  src: url(../img/ofont.ru_Times New Roman.ttf); /* Путь к файлу со шрифтом */
 }
 body {
   background-color: #2a2d30;
-	font-family: Serif, 'FF Meta Serif';
+	font-family: Serif, 'Times New Roman';
 	overflow-x: hidden;
 }
 .main {
@@ -27,6 +27,13 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1180px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #fff;
+  text-decoration: none; 
 }
 p {
 	color: #ffffff;
