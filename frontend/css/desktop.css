@@ -120,24 +120,25 @@ header:before {
 .contact__center {
 	display: flex;
 	position: relative;
-	justify-content: space-between;
+	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
 }
 
 .contact__center__left {
-	width: 87%;
+	width: 100%;
 	display: flex;
 	position: relative;
 	flex-direction: column;
 }
 .contact__center__right {
-	width: 10%;
+	width: 100%;
 	display: flex;
 	position: relative;
-	flex-direction: column;
-	height: 320px;
+	flex-direction: row;
+	height: 100px;
+	margin-top: 20px;
 }
 .people__block {
 	display: flex;

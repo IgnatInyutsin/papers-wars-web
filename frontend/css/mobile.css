@@ -79,13 +79,6 @@
   .header__burger.active span{
     transform: scale(0);
   }
-
-  .contact__center__left {
-    width: 77%;
-  }
-  .contact__center__right {
-    width: 20%;
-  }
 }
 
 @media(max-width: 768px) {
