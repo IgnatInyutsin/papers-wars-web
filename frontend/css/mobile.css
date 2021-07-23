@@ -85,7 +85,16 @@
   .header__body {
     height: 50px;
   }
-
+  label {
+    color: #fff;
+    font-size: 20px;
+  }
+  .checkboxes {
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+  }
   .header__logo {
     flex: 0 0 40px;
   }
