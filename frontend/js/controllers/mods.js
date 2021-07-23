@@ -23,7 +23,7 @@ main.controller('mods',function($scope,$http,$location,$cookies){
 		//этап 3 - сбор списка модов
 		$http.get('addons/config.json').then(function(allMods) {
 			allMods = allMods.data.data
-			
+
 			for (i=0; i<allMods.length; i++) {
 				$http.get('addons/' + allMods[i]).then(function(data) {
 					//количество совпадающих элементов в массиве
@@ -61,3 +61,4 @@ main.controller('mods',function($scope,$http,$location,$cookies){
 
 	$scope.$parent.pageName = 'mods';
 });
+//абоба
