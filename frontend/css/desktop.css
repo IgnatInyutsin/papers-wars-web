@@ -128,6 +128,7 @@ header:before {
 
 .contact__center__left {
 	width: 100%;
+	height: auto;
 	display: flex;
 	position: relative;
 	flex-direction: column;
