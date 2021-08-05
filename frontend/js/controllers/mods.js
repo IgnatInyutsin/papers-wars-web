@@ -32,8 +32,8 @@ main.controller('mods',function($scope,$http,$location,$cookies){
 					compare = (a1, a2) => checkedCheckboxesList.reduce((a, c) => a + data.data.tags.includes(c), 0);
 					//проверка и сортировка
 					if (compare(checkedCheckboxesList, data.data.tags) == checkedCheckboxesList.length
-					&& data.data.name.toLowerCase().includes(searchModeName.toLowerCase())
-					&& data.data.author.toLowerCase().includes(searchAuthor.toLowerCase())) {
+					&& data.data.name.toUpperCase().includes(searchModeName.toUpperCase())
+					&& data.data.author.includes(searchAuthor)) {
 						$scope.output += '<div class = "mods__content__block">'
 						+ '<div class="news__name"> ' + data.data.name + '</div>'
 						+ '<div class="news__text">' + '<div style="text-align: center;"><u>Описание</u></div> ' + data.data.description + '</div>'
