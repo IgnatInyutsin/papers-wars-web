@@ -4,8 +4,6 @@ main.controller('mods',function($scope,$http,$location,$cookies){
 	let sortMods = [];
 
 	$scope.searchClick = function () {
-		//окно загрузки
-		document.body.classList.remove('loaded');
 		//обнуление
 		$scope.output = "";
 		$("div.mods__content__block").remove();
